@@ -5,7 +5,7 @@ telegram:
 
 spring:
   application:
-    name: "telgram-service"
+    name: "telegram-service"
   profiles:
     active: dev
 server:
