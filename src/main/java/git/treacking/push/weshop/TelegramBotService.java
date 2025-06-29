@@ -10,5 +10,7 @@ public interface TelegramBotService {
 
     void  notification(String groupId,String topicId,Map<String, Object> payload);
 
+    void scheduleNotification();
+
 
 }

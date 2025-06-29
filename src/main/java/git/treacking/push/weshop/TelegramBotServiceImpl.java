@@ -19,6 +19,11 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class TelegramBotServiceImpl implements TelegramBotService {
 
+    @Override
+    public void scheduleNotification() {
+
+    }
+
     @Value("${telegram.bot.token1}")
     private String botToken;
 
@@ -53,6 +58,7 @@ public class TelegramBotServiceImpl implements TelegramBotService {
                 messageSendBody.repoName(),
                 messageSendBody.authorName(),
                 messageSendBody.message(),
+                messageSendBody.branch(),
                 messageSendBody.dateTime(),
                 formattedDateTime
         );
