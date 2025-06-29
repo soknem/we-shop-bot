@@ -1,0 +1,13 @@
+
+telegram:
+  bot:
+    token1: ${TELEGRAM_TOKEN1}
+    id1: ${TELEGRAM_ID1}
+
+spring:
+  application:
+    name: "telgram-service"
+  profiles:
+    active: dev
+server:
+  port: 8080

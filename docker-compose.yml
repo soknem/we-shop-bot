@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  git-tracking:
+    container_name: 'telegram-bot'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      - TZ=Asia/Bangkok
+    ports:
+      - '8990:8080'
