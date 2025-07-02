@@ -2,6 +2,7 @@
 telegram:
   bot:
     token1: ${TELEGRAM_TOKEN1}
+    token2: ${TELEGRAM_TOKEN2}
 
 spring:
   application:
